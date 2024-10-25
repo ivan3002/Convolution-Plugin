@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="bCGfpM" name="Convolution" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="v24v7x" name="Convolution">
+    <GROUP id="{87B546EE-490A-06A6-C4DE-0934C2043304}" name="Assets">
+      <FILE id="s29al4" name="testimagethree.jpg" compile="0" resource="1"
+            file="Source/Assets/testimagethree.jpg"/>
+      <FILE id="qpyAVk" name="testimagetwo.jpeg" compile="0" resource="1"
+            file="Source/Assets/testimagetwo.jpeg"/>
+    </GROUP>
+    <GROUP id="{BDAE5C92-516E-1794-5DAB-329A78C03E2C}" name="IRs">
+      <FILE id="uCr9t4" name="stereoIR_Genelecs_Better_Vol_(stereo).wav"
+            compile="0" resource="1" file="Source/IRs/stereoIR_Genelecs_Better_Vol_(stereo).wav"/>
+      <FILE id="ppNzOW" name="stereoIR_Phone Speaker_(stereo).wav" compile="0"
+            resource="1" file="Source/IRs/stereoIR_Phone Speaker_(stereo).wav"/>
+      <FILE id="YEjJWR" name="stereoIR_Portable Speaker_(stereo).wav" compile="0"
+            resource="1" file="Source/IRs/stereoIR_Portable Speaker_(stereo).wav"/>
+    </GROUP>
+    <GROUP id="{967FD56B-12B0-10D4-8570-4FA6D0F481F7}" name="Source">
+      <FILE id="PIKQzv" name="LowerPanel.cpp" compile="1" resource="0" file="Source/LowerPanel.cpp"/>
+      <FILE id="NrBSTN" name="LowerPanel.h" compile="0" resource="0" file="Source/LowerPanel.h"/>
+      <FILE id="ujzA3u" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="USOogE" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="w1TgoA" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="RPfBTw" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Convolution"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Convolution"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_core" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_dsp" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_events" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_graphics" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_opengl" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+        <MODULEPATH id="juce_osc" path="../Apps, Setup Files, Drivers etc/JUCE-master/JUCE-master/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
