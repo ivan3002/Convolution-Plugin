@@ -16,17 +16,6 @@
 /**
 */
 
-//creating a custom component by definiting a new struct and inheriting from the component class
-//this will serve as a lower panel to house some controls
-
-//struct LowerPanel : juce::Component {
-//
-//
-//    void paint(juce::Graphics& g) {
-//        g.fillAll(juce::Colours::darkgrey);
-//    }
-//
-//};
 
 class ConvolutionAudioProcessorEditor : public juce::AudioProcessorEditor
 {

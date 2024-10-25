@@ -32,7 +32,7 @@ ConvolutionAudioProcessorEditor::ConvolutionAudioProcessorEditor (ConvolutionAud
 
     //Create the attachments to link UI to parameters
     outputLevelAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.apvts, "outputLevel", lowerPanel.getKnob());
-    bypassAttachment = std::make_unique<juce::AudioProcessorValueTreeState::ButtonAttachment>(audioProcessor.apvts, "outputLevel", lowerPanel.getBypass());
+    bypassAttachment = std::make_unique<juce::AudioProcessorValueTreeState::ButtonAttachment>(audioProcessor.apvts, "bypass", lowerPanel.getBypass());
 
 
  

@@ -25,7 +25,7 @@ public:
     void resized() override;
 
     juce::Slider& getKnob();
-    juce::Slider& getBypass();
+    juce::Button& getBypass();
     
   
 

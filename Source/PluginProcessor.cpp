@@ -193,13 +193,11 @@ juce::AudioProcessorValueTreeState::ParameterLayout ConvolutionAudioProcessor::c
 
     //calling make_unique to create a pointer to an object of type AudioParameterFloat
     //this is then passed into push_back method
-    params.push_back(std::make_unique<juce::AudioParameterFloat>("refLevel", "Reference Level", 0.0f, 1.0f, 0.5f)); // ID, name, min, max, default
-
-    params.push_back(std::make_unique<juce::AudioParameterChoice>("system", "System Select", impulseResponses, 0));
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("outputLevel", "Output Level", 0.0f, 1.0f, 0.5f)); // ID, name, min, max, default
 
     params.push_back(std::make_unique<juce::AudioParameterBool>("bypass", "Bypass", false));
 
-    return juce::AudioProcessorValueTreeState::ParameterLayout();
+    return { params.begin(), params.end()};
 }
 
 //==============================================================================

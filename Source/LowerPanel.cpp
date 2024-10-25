@@ -92,6 +92,6 @@ juce::Slider& LowerPanel::getKnob() {
     return knob;
 }
 
-juce::Slider& LowerPanel::getBypass() {
+juce::Button& LowerPanel::getBypass() {
     return bypass;
 }

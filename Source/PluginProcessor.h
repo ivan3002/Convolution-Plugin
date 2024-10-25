@@ -61,9 +61,6 @@ private:
     //declare function of type ParameterLayout to be passed as an argument into the apvts constructor
     juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
 
-    //creating an array containing the IR files
-    juce::StringArray impulseResponses = {BinaryData::stereoIR_Genelecs_Better_Vol_stereo_wav,
-        BinaryData::stereoIR_Phone_Speaker_stereo_wav, BinaryData::stereoIR_Portable_Speaker_stereo_wav};
 
     // define convolution processor
     juce::dsp::Convolution convolution; 
